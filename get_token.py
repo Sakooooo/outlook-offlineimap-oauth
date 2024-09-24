@@ -8,7 +8,7 @@ import urllib.parse
 import webbrowser
 
 
-redirect_uri = "http://localhost:8745/"
+redirect_uri = "https://localhost/"
 
 # We use the cache to extract the refresh token
 cache = SerializableTokenCache()
@@ -19,6 +19,7 @@ url = app.get_authorization_request_url(config.Scopes, redirect_uri=redirect_uri
 # webbrowser.open may fail silently
 print("Navigate to the following url in a web browser, if doesn't open automatically:")
 print(url)
+print("After that, replace https://localhost with http://localhost:8745 in your browser to save the tokens.")
 try:
     webbrowser.open(url)
 except Exception:
