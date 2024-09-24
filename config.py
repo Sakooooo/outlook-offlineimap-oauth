@@ -1,5 +1,7 @@
-ClientId = "08162f7c-0fd2-4200-a84a-f25a4db0b584"
-ClientSecret = "TxRBilcHdC6WGBee]fs?QR:SJ8nI[g82"
+# This is Thunderbird's ClientId
+ClientId = "9e5f94bc-e8a4-4e73-b8be-63364c29d753"
+# ClientSecret is no longer needed.
+ClientSecret = ""
 Scopes = ['https://outlook.office.com/IMAP.AccessAsUser.All','https://outlook.office.com/SMTP.Send']
 RefreshTokenFileName = "imap_smtp_refresh_token"
 AccessTokenFileName = "imap_smtp_access_token"
